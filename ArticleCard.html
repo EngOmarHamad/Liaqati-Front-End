@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
+        <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <title>Document</title>
+        <style>
+        @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+
+        * {
+            font-family: "Almarai", sans-serif;
+        }
+
+        .btn-main {
+            background-color: #BE8ADC !important;
+        }
+        .image-box img{transition: .3s;}
+        .image-box:hover img{
+            transform: scale(1.05) rotate(2deg);
+        }
+        </style>
+    </head>
+    <body>
+        <div class="row g-0 p-0 min-vh-100 m-0 d-flex justify-content-center
+            align-items-center" id="copy">
+            <div class="col-12 col-md-6 col-lg-3 p-2">
+                <div class="card rounded-0 border  shadow-sm">
+                    <div class="position-relative  overflow-hidden image-box" style="height:300px">
+                        <img src="./assets/images/12.png" class="card-img-top rounded-0 object-fit-cover position-absolute w-100 start-0 top-0 h-100" alt="...">
+                    </div>
+                    <div class="text-50 position-absolute top-0 end-0 px-2   text-end" style="backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.2);">
+                        <a title="share" class="btn border-0 bg-transparent text--dark" href="#">
+                            <i class="bi bi-share fs-4 text-dark"></i>
+                        </a>
+                        <a title="heart" class="btn border-0 bg-transparent" href="#">
+                            <i class="bi bi-heart fs-4 text-dark"></i>
+                        </a>
+                    </div>
+                    <div class="card-body p-2">
+                        <p class="card-title text-black-50 fw-bold m-0">
+                            رشاقة وتغذية
+                        </p>
+                        <p class="card-text fw-bold">
+                            المعدل الطبيعي لخسارة الوزن في شهر
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 placeholder-wave col-md-6 col-lg-3 p-2">
+                <div class="card rounded-0 border shadow-sm">
+                    <div class="position-relative  placeholder" style="height:300px"></div>
+                    <div class="card-body p-2">
+                        <p class="card-title placeholder w-50 text-black-50 fw-bold m-0"></p>
+                        <span class="placeholder col-7"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-6"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row p-0 g-0" id="experts"></div>
+            <script>
+            for (let index = 0; index < 4; index++) {
+                document
+                    .getElementById("experts")
+                    .appendChild(
+                        document
+                        .getElementById("copy")
+                        .firstElementChild.cloneNode(true)
+                    );
+            }
+            </script>
+        </div>
+    </body>
+</html>
