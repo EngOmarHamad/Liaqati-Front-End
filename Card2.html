@@ -1,108 +1,48 @@
 ﻿<!DOCTYPE html>
 <html dir="rtl" lang="ar">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
-    <title></title>
-    <style>
-      /*        card1
-*/
-      @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
-      * {
-        font-family: "Almarai", sans-serif;
-      }
-      .bg-white-with-transparent {
-        background-color: rgba(255, 255, 255, 0.7) !important;
-      }
-      .overlay {
-        transition: 0.3s;
-        background-color: rgba(255, 255, 255, 0.4);
-      }
-      .hoverable-image:hover .overlay {
-        opacity: 0;
-      }
 
-      .more-details-btn {
-        opacity: 0;
-        transition: 0.3s;
-      }
-      .hoverable-image:hover .more-details-btn {
-        opacity: 1;
-      }
-      .meal-plan{        transition: 0.3s;
-}
-      .meal-plan:hover{
-        border:1px dashed #cb8cef;
-      }
-    </style>
-  </head>
-  <body>
-    <div
-      class="row g-0 p-0 min-vh-100 m-0 d-flex justify-content-center align-items-center"
-      id="copy"
-    >
-      <div class="col-12 col-md-6 col-lg-4 p-3">
-        <div class="card shadow-sm meal-plan overflow-hidden">
-          <div class="card-header bg-transparent">
-            <p class="text-center p-0 m-0"># الأنظمة الحديثة</p>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+  <title></title>
 
-          <div class="position-relative hoverable-image" style="height: 200px">
-            <img
-              src="img/food.png"
-              class="w-100 position-absolute h-100 top-0 start-0 object-fit-cover"
-              alt="..."
-            />
-            <div
-              class="overlay w-100 position-absolute h-100 top-0 start-0"
-            ></div>
-            <div
-              class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 p-3 top-0 start-0"
-            >
-              <button
-                class="btn bg-white-with-transparent more-details-btn rounded-pill shadow border-0 p-2 px-3 fw-bold"
-                type="button"
-              >
-                مزيد من التفاصيل
-              </button>
-            </div>
-          </div>
+</head>
 
-          <div class="card-body">
-            <h5 class="card-title fw-bold text-black text-end">
-              النظام الغذائي الباليو
-            </h6>
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="card-subtitle">
-                يعتمد على تقليل الكربوهيدرات ومنع السكر المصنع والبطاطا
+<body>
+  <div class="row g-0 p-0 min-vh-100 m-0 d-flex justify-content-center align-items-center" id="copy">
+    <div class="col-12 col-md-6 col-lg-4 pb-3">
+      <div class="card">
+        <div class="position-relative">
+          <img src="./assets/images/ahmad.png" class="card-img-top" alt="..." />
+        </div>
+        <div class="position-absolute top-0 start-0 p-4">
+          <a title="whatsapp" class="btn border-0 bg-transparent p-0 m-0" href="#">
+            <i class="bi bi-whatsapp h5 text-white"></i>
+          </a>
+          <a title="instagram" class="btn border-0 bg-transparentp-0 m-0" href="#">
+            <i class="bi bi-instagram h5 text-white"></i>
+          </a>
+          <a title="twitter" class="btn border-0 bg-transparent p-0 m-0" href="#">
+            <i class="bi bi-twitter h5 text-white"></i>
+          </a>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <h6 class="card-title text-black text-end">أ. جواد احمد</h6>
+              <p class="card-subtitle text-black-50 fw-normal">
+                أخصائي تغذية
               </p>
-              <p class="text-danger text-start h3 fw-bold me-3">$19.9</p>
             </div>
-
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <p class="m-0">أسبوع</p>
-              </div>
-              <div>
-                <button
-                  class="btn border-0 text-white"
-                  style="background-color: #cb8cef"
-                >
-                  اشترك الان
+            <div class="col-6">
+              <div class="text-start">
+                <button class="btn border-0 text-white fw-bold px-3 py-1" type="submit"
+                  style="background-color: #b9aff5">
+                  احجز موعد
                 </button>
               </div>
             </div>
@@ -110,707 +50,553 @@
         </div>
       </div>
     </div>
-    <div class="container">
-        <div class="row p-0 g-0" id="mealPlan"></div>
-        <script>
-          for (let index = 0; index < 6; index++) {
+  </div>
+  <div class="container">
+    <div class="row p-0 g-0" id="mealPlan"></div>
+    <script>
+      for (let index = 0; index < 6; index++) {
+        document
+          .getElementById("mealPlan")
+          .appendChild(
             document
-              .getElementById("mealPlan")
-              .appendChild(
-                document
-                  .getElementById("copy")
-                  .firstElementChild.cloneNode(true)
-              );
-          }
-        </script>
-    </div>
-    <div class="container">
+            .getElementById("copy")
+            .firstElementChild.cloneNode(true)
+          );
+      }
+    </script>
+  </div>
+  <div class="container">
 
-        <!--card2-->
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 pb-4">
-            <div class="card border-0 mb-3">
-              <div class="position-relative">
-                <img src="img/8.png" class="card-img" />
-              </div>
-              <div
-                class="w-100 py-md-0 py-lg-2"
-                style="
+    <!--card2-->
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 pb-4">
+        <div class="card border-0 mb-3">
+          <div class="position-relative">
+            <img src="img/8.png" class="card-img" />
+          </div>
+          <div class="w-100 py-md-0 py-lg-2" style="
                   backdrop-filter: blur(10px);
                   background-color: #e1d8eea;
                   margin-top: -20%;
                   border-end-start-radius: 15px;
                   border-end-end-radius: 15px;
-                "
-              >
-                <div class="row py-2 mb-5">
-                  <div class="col-6 mt-sm-5 mt-md-2 mt-lg-1">
-                    <h6 class="text-end text-white">نظام غذائي| رجيم الارز</h6>
-                  </div>
-                  <div class="col-6 mt-sm-5 mt-md-2 mt-lg-1">
-                    <button
-                      class="float-start border-0 py-1 px-lg-3 ms-1 rounded-3"
-                      style="background-color: #ddd9f5"
-                    >
-                      اشترك الان
-                    </button>
-                  </div>
-                </div>
+                ">
+            <div class="row py-2 mb-5">
+              <div class="col-6 mt-sm-5 mt-md-2 mt-lg-1">
+                <h6 class="text-end text-white">نظام غذائي| رجيم الارز</h6>
               </div>
-              <div
-                class="d-block position-absolute"
-                style="top: 30%; right: 35%"
-              >
-                <button class="d-none border-0 bg-light rounded-pill p-2">
-                  التفاصيل....
+              <div class="col-6 mt-sm-5 mt-md-2 mt-lg-1">
+                <button class="float-start border-0 py-1 px-lg-3 ms-1 rounded-3" style="background-color: #ddd9f5">
+                  اشترك الان
                 </button>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 pb-4">
-            <div class="card border-0 mb-3">
-              <div class="position-relative">
-                <img src="img/8.png" class="card-img" />
-              </div>
-              <div
-                class="w-100 py-md-0 py-lg-2"
-                style="
+          <div class="d-block position-absolute" style="top: 30%; right: 35%">
+            <button class="d-none border-0 bg-light rounded-pill p-2">
+              التفاصيل....
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 pb-4">
+        <div class="card border-0 mb-3">
+          <div class="position-relative">
+            <img src="img/8.png" class="card-img" />
+          </div>
+          <div class="w-100 py-md-0 py-lg-2" style="
                   backdrop-filter: blur(10px);
                   background-color: #e1d8eea;
                   margin-top: -20%;
                   border-end-start-radius: 15px;
                   border-end-end-radius: 15px;
-                "
-              >
-                <div class="row py-2 mb-5">
-                  <div class="col-6 mt-sm-5 mt-md-2 mt-lg-1">
-                    <h6 class="text-end text-white">نظام غذائي| رجيم الارز</h6>
-                  </div>
-                  <div class="col-6 mt-sm-5 mt-md-2 mt-lg-1">
-                    <button
-                      class="float-start border-0 py-1 px-lg-3 ms-1 rounded-3"
-                      style="background-color: #ddd9f5"
-                    >
-                      اشترك الان
-                    </button>
-                  </div>
-                </div>
+                ">
+            <div class="row py-2 mb-5">
+              <div class="col-6 mt-sm-5 mt-md-2 mt-lg-1">
+                <h6 class="text-end text-white">نظام غذائي| رجيم الارز</h6>
               </div>
-              <div
-                class="d-block position-absolute"
-                style="top: 30%; right: 35%"
-              >
-                <button class="d-none border-0 bg-light rounded-pill p-2">
-                  التفاصيل....
+              <div class="col-6 mt-sm-5 mt-md-2 mt-lg-1">
+                <button class="float-start border-0 py-1 px-lg-3 ms-1 rounded-3" style="background-color: #ddd9f5">
+                  اشترك الان
                 </button>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 pb-4">
-            <div class="card border-0 mb-3">
-              <div class="position-relative">
-                <img src="img/8.png" class="card-img" />
-              </div>
-              <div
-                class="w-100 py-md-0 py-lg-2"
-                style="
+          <div class="d-block position-absolute" style="top: 30%; right: 35%">
+            <button class="d-none border-0 bg-light rounded-pill p-2">
+              التفاصيل....
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 pb-4">
+        <div class="card border-0 mb-3">
+          <div class="position-relative">
+            <img src="img/8.png" class="card-img" />
+          </div>
+          <div class="w-100 py-md-0 py-lg-2" style="
                   backdrop-filter: blur(10px);
                   margin-top: -20%;
                   border-end-start-radius: 15px;
                   border-end-end-radius: 15px;
-                "
-              >
-                <div class="row py-2 mb-3">
-                  <div class="col-6 mt-sm-5 mt-md-2 mt-lg-1">
-                    <h6 class="text-end text-white">نظام غذائي| رجيم الارز</h6>
-                  </div>
-                  <div class="col-6 mt-sm-5 mt-md-2 mt-lg-1">
-                    <button
-                      class="float-start border-0 py-1 px-lg-3 ms-1 rounded-3"
-                      style="background-color: #ddd9f5"
-                    >
-                      اشترك الان
-                    </button>
-                  </div>
-                </div>
+                ">
+            <div class="row py-2 mb-3">
+              <div class="col-6 mt-sm-5 mt-md-2 mt-lg-1">
+                <h6 class="text-end text-white">نظام غذائي| رجيم الارز</h6>
               </div>
-              <div
-                class="d-block position-absolute"
-                style="top: 30%; right: 35%"
-              >
-                <button class="d-none border-0 bg-light rounded-pill p-2">
-                  التفاصيل....
+              <div class="col-6 mt-sm-5 mt-md-2 mt-lg-1">
+                <button class="float-start border-0 py-1 px-lg-3 ms-1 rounded-3" style="background-color: #ddd9f5">
+                  اشترك الان
                 </button>
               </div>
             </div>
           </div>
-        </div>
-
-        <!--card3-->
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 pb-2">
-            <div class="card shadow-sm">
-              <div class="row no-gutters">
-                <div class="col-sm-4">
-                  <img src="img/1.jpg" class="card-img h-100 w-100" alt="..." />
-                </div>
-                <div class="col-sm-8">
-                  <div class="card-body">
-                    <p
-                      class="card-subtitle text-end"
-                      style="font-size: x-small; margin-right: -1rem"
-                    >
-                      برنامج 8 أسابيع--30دقيقة/اليوم
-                    </p>
-                    <h4
-                      class="card-title text-end w-100"
-                      style="font-size: 2vh; margin-right: -1rem"
-                    >
-                      برنامج فقدان الدهون للأشخاص
-                    </h4>
-
-                    <div class="row">
-                      <div class="col-4">
-                        <h6
-                          class="card-title text-danger text-end"
-                          style="margin-right: -1rem"
-                        >
-                          $19.9
-                        </h6>
-                      </div>
-                      <div class="col-8">
-                        <button
-                          class="btn border-0 text-end px-2 py-1"
-                          style="background-color: #b9aff5"
-                        >
-                          <h6
-                            class="text-white float-end"
-                            style="font-size: small"
-                          >
-                            ابدأ الآن
-                            <span
-                              ><i
-                                class="bx bx-shopping-bag fw-ligh"
-                                style="color: #ffffff"
-                              ></i
-                            ></span>
-                          </h6>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 pb-2">
-            <div class="card shadow-sm">
-              <div class="row no-gutters">
-                <div class="col-sm-4">
-                  <img src="img/1.jpg" class="card-img h-100 w-100" alt="..." />
-                </div>
-                <div class="col-sm-8">
-                  <div class="card-body">
-                    <p
-                      class="card-subtitle text-end"
-                      style="font-size: x-small; margin-right: -1rem"
-                    >
-                      برنامج 8 أسابيع--30دقيقة/اليوم
-                    </p>
-                    <h4
-                      class="card-title text-end w-100"
-                      style="font-size: 2vh; margin-right: -1rem"
-                    >
-                      برنامج فقدان الدهون للأشخاص
-                    </h4>
-
-                    <div class="row">
-                      <div class="col-4">
-                        <h6
-                          class="card-title text-danger text-end"
-                          style="margin-right: -1rem"
-                        >
-                          $19.9
-                        </h6>
-                      </div>
-                      <div class="col-8">
-                        <button
-                          class="btn border-0 text-end px-2 py-1"
-                          style="background-color: #b9aff5"
-                        >
-                          <h6
-                            class="text-white float-end"
-                            style="font-size: small"
-                          >
-                            ابدأ الآن
-                            <span
-                              ><i
-                                class="bx bx-shopping-bag fw-ligh"
-                                style="color: #ffffff"
-                              ></i
-                            ></span>
-                          </h6>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 pb-2">
-            <div class="card shadow-sm">
-              <div class="row no-gutters">
-                <div class="col-sm-4">
-                  <img src="img/1.jpg" class="card-img h-100 w-100" alt="..." />
-                </div>
-                <div class="col-sm-8">
-                  <div class="card-body">
-                    <p
-                      class="card-subtitle text-end"
-                      style="font-size: x-small; margin-right: -1rem"
-                    >
-                      برنامج 8 أسابيع--30دقيقة/اليوم
-                    </p>
-                    <h4
-                      class="card-title text-end w-100"
-                      style="font-size: 2vh; margin-right: -1rem"
-                    >
-                      برنامج فقدان الدهون للأشخاص
-                    </h4>
-
-                    <div class="row">
-                      <div class="col-4">
-                        <h6
-                          class="card-title text-danger text-end"
-                          style="margin-right: -1rem"
-                        >
-                          $19.9
-                        </h6>
-                      </div>
-                      <div class="col-8">
-                        <button
-                          class="btn border-0 text-end px-2 py-1"
-                          style="background-color: #b9aff5"
-                        >
-                          <h6
-                            class="text-white float-end"
-                            style="font-size: small"
-                          >
-                            ابدأ الآن
-                            <span
-                              ><i
-                                class="bx bx-shopping-bag fw-ligh"
-                                style="color: #ffffff"
-                              ></i
-                            ></span>
-                          </h6>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="d-block position-absolute" style="top: 30%; right: 35%">
+            <button class="d-none border-0 bg-light rounded-pill p-2">
+              التفاصيل....
+            </button>
           </div>
         </div>
-
-        <!--card4-->
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 pb-3">
-            <div class="card">
-              <div class="position-relative">
-                <img src="img/12.png" class="card-img-top" alt="..." />
-              </div>
-              <div class="text-black-50 position-absolute top-0 start-0 p-3">
-                <a class="btn border-0 bg-transparent" href="#"
-                  ><i class="bx bx-share-alt fs-4 text-black-50"></i
-                ></a>
-                <a class="btn border-0 bg-transparent" href="#"
-                  ><i class="bx bx-heart fs-4 text-black-50"></i
-                ></a>
-              </div>
-              <div class="card-body">
-                <p class="card-title text-black-50" style="margin-top: -1rem">
-                  رشاقة وتغذية
-                </p>
-                <p class="card-text fw-bold">
-                  المعدل الطبيعي لخسارة الوزن في شهر
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 pb-3">
-            <div class="card">
-              <div class="position-relative">
-                <img src="img/12.png" class="card-img-top" alt="..." />
-              </div>
-              <div class="text-black-50 position-absolute top-0 start-0 p-3">
-                <a class="btn border-0 bg-transparent" href="#"
-                  ><i class="bx bx-share-alt fs-4 text-black-50"></i
-                ></a>
-                <a class="btn border-0 bg-transparent" href="#"
-                  ><i class="bx bx-heart fs-4 text-black-50"></i
-                ></a>
-              </div>
-              <div class="card-body">
-                <p class="card-title text-black-50" style="margin-top: -1rem">
-                  رشاقة وتغذية
-                </p>
-                <p class="card-text fw-bold">
-                  المعدل الطبيعي لخسارة الوزن في شهر
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 pb-3">
-            <div class="card">
-              <div class="position-relative">
-                <img src="img/12.png" class="card-img-top" alt="..." />
-              </div>
-              <div class="text-black-50 position-absolute top-0 start-0 p-3">
-                <a class="btn border-0 bg-transparent" href="#"
-                  ><i class="bx bx-share-alt fs-4 text-black-50"></i
-                ></a>
-                <a class="btn border-0 bg-transparent" href="#"
-                  ><i class="bx bx-heart fs-4 text-black-50"></i
-                ></a>
-              </div>
-              <div class="card-body">
-                <p class="card-title text-black-50" style="margin-top: -1rem">
-                  رشاقة وتغذية
-                </p>
-                <p class="card-text fw-bold">
-                  المعدل الطبيعي لخسارة الوزن في شهر
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--card5-->
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card shadow-sm h-75">
-              <div class="row no-gutters">
-                <div class="col-sm-5">
-                  <img src="img/12.png" class="card-img h-75" alt="..." />
-                </div>
-                <div class="col-sm-7">
-                  <div class="card-body">
-                    <h6 class="card-title text-center">شيش طاووق مشوي</h6>
-                    <div class="text-start">
-                      <a class="btn border-0 bg-transparent" href="#">
-                        <i
-                          class="bx bx-heart fs-3 ms-2 text-start"
-                          style="margin-bottom: -3rem !important"
-                        ></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card shadow-sm h-75">
-              <div class="row no-gutters">
-                <div class="col-sm-5">
-                  <img src="img/12.png" class="card-img h-75" alt="..." />
-                </div>
-                <div class="col-sm-7">
-                  <div class="card-body">
-                    <h6 class="card-title text-center">شيش طاووق مشوي</h6>
-                    <div class="text-start">
-                      <a class="btn border-0 bg-transparent" href="#">
-                        <i
-                          class="bx bx-heart fs-3 ms-2 text-start"
-                          style="margin-bottom: -3rem !important"
-                        ></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card shadow-sm h-75">
-              <div class="row no-gutters">
-                <div class="col-sm-5">
-                  <img src="img/12.png" class="card-img h-75" alt="..." />
-                </div>
-                <div class="col-sm-7">
-                  <div class="card-body">
-                    <h6 class="card-title text-center">شيش طاووق مشوي</h6>
-                    <div class="text-start">
-                      <a class="btn border-0 bg-transparent" href="#">
-                        <i
-                          class="bx bx-heart fs-3 ms-2 text-start"
-                          style="margin-bottom: -3rem !important"
-                        ></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--card6-->
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 pb-3">
-            <div class="card">
-              <div class="position-relative">
-                <img src="img/12.png" class="card-img-top" alt="..." />
-              </div>
-
-              <div class="card-body">
-                <div class="row" style="border-bottom: 1px solid #cfcfcf">
-                  <div class="col-6">
-                    <h6 class="card-title text-black text-end">
-                      شيش طاووق مشوي
-                    </h6>
-                  </div>
-                  <div class="col-6">
-                    <div class="text-start">
-                      <i class="bx bx-share-alt fs-4"></i>
-                      <i class="bx bx-heart fs-4"></i>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row mt-3">
-                  <div class="col-4 d-flex mt-2">
-                    <i class="bx bxs-star text-warning"></i>
-                    <i class="bx bxs-star text-warning"></i>
-                    <i class="bx bxs-star text-warning"></i>
-                    <i class="bx bxs-star text-warning"></i>
-                  </div>
-                  <div class="col-4 d-flex">
-                    <i class="bi bi-alarm"></i>
-                    <p>30دقيقة</p>
-                  </div>
-                  <div class="col-4 d-flex">
-                    <i class="bx bx-bowl-hot fs-5"></i>
-                    <p>متوسط</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 pb-3">
-            <div class="card">
-              <div class="position-relative">
-                <img src="img/12.png" class="card-img-top" alt="..." />
-              </div>
-
-              <div class="card-body">
-                <div class="row" style="border-bottom: 1px solid #cfcfcf">
-                  <div class="col-6">
-                    <h6 class="card-title text-black text-end">
-                      شيش طاووق مشوي
-                    </h6>
-                  </div>
-                  <div class="col-6">
-                    <div class="text-start">
-                      <i class="bx bx-share-alt fs-4"></i>
-                      <i class="bx bx-heart fs-4"></i>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row mt-3">
-                  <div class="col-4 d-flex mt-2">
-                    <i class="bx bxs-star text-warning"></i>
-                    <i class="bx bxs-star text-warning"></i>
-                    <i class="bx bxs-star text-warning"></i>
-                    <i class="bx bxs-star text-warning"></i>
-                  </div>
-                  <div class="col-4 d-flex">
-                    <i class="bi bi-alarm"></i>
-                    <p>30دقيقة</p>
-                  </div>
-                  <div class="col-4 d-flex">
-                    <i class="bx bx-bowl-hot fs-5"></i>
-                    <p>متوسط</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 pb-3">
-            <div class="card">
-              <div class="position-relative">
-                <img src="img/12.png" class="card-img-top" alt="..." />
-              </div>
-
-              <div class="card-body">
-                <div class="row" style="border-bottom: 1px solid #cfcfcf">
-                  <div class="col-6">
-                    <h6 class="card-title text-black text-end">
-                      شيش طاووق مشوي
-                    </h6>
-                  </div>
-                  <div class="col-6">
-                    <div class="text-start">
-                      <i class="bx bx-share-alt fs-4"></i>
-                      <i class="bx bx-heart fs-4"></i>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row mt-3">
-                  <div class="col-4 d-flex mt-2">
-                    <i class="bx bxs-star text-warning"></i>
-                    <i class="bx bxs-star text-warning"></i>
-                    <i class="bx bxs-star text-warning"></i>
-                    <i class="bx bxs-star text-warning"></i>
-                  </div>
-                  <div class="col-4 d-flex">
-                    <i class="bi bi-alarm"></i>
-                    <p>30دقيقة</p>
-                  </div>
-                  <div class="col-4 d-flex">
-                    <i class="bx bx-bowl-hot fs-5"></i>
-                    <p>متوسط</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--card7-->
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 pb-3">
-            <div class="card">
-              <div class="position-relative">
-                <img src="img/ahmad.png" class="card-img-top" alt="..." />
-              </div>
-              <div class="position-absolute top-0 start-0 p-3">
-                <a class="btn border-0 bg-transparent p-0 m-0" href="#">
-                  <img height="25" src="img/whatts.png" />
-                </a>
-
-                <a class="btn border-0 bg-transparentp-0 m-0" href="#">
-                  <img height="25" src="img/insta.png" />
-                </a>
-                <a class="btn border-0 bg-transparent p-0 m-0" href="#">
-                  <img height="25" src="img/twiter.png" />
-                </a>
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-6">
-                    <h6 class="card-title text-black text-end">أ. جواد احمد</h6>
-                    <p class="card-subtitle text-black-50 fw-normal">
-                      أخصائي تغذية
-                    </p>
-                  </div>
-                  <div class="col-6">
-                    <div class="text-start">
-                      <button
-                        class="btn border-0 text-white fw-bold px-3 py-1"
-                        type="submit"
-                        style="background-color: #b9aff5"
-                      >
-                        احجز موعد
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 pb-3">
-            <div class="card">
-              <div class="position-relative">
-                <img src="img/ahmad.png" class="card-img-top" alt="..." />
-              </div>
-              <div class="position-absolute top-0 start-0 p-3">
-                <a class="btn border-0 bg-transparent p-0 m-0" href="#">
-                  <img height="25" src="img/whatts.png" />
-                </a>
-
-                <a class="btn border-0 bg-transparentp-0 m-0" href="#">
-                  <img height="25" src="img/insta.png" />
-                </a>
-                <a class="btn border-0 bg-transparent p-0 m-0" href="#">
-                  <img height="25" src="img/twiter.png" />
-                </a>
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-6">
-                    <h6 class="card-title text-black text-end">أ. جواد احمد</h6>
-                    <p class="card-subtitle text-black-50 fw-normal">
-                      أخصائي تغذية
-                    </p>
-                  </div>
-                  <div class="col-6">
-                    <div class="text-start">
-                      <button
-                        class="btn border-0 text-white fw-bold px-3 py-1"
-                        type="submit"
-                        style="background-color: #b9aff5"
-                      >
-                        احجز موعد
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 pb-3">
-            <div class="card">
-              <div class="position-relative">
-                <img src="img/ahmad.png" class="card-img-top" alt="..." />
-              </div>
-              <div class="position-absolute top-0 start-0 p-3">
-                <a class="btn border-0 bg-transparent p-0 m-0" href="#">
-                  <img height="25" src="img/whatts.png" alt="" />
-                </a>
-
-                <a class="btn border-0 bg-transparentp-0 m-0" href="#">
-                  <img height="25" src="img/insta.png" />
-                </a>
-                <a class="btn border-0 bg-transparent p-0 m-0" href="#">
-                  <img height="25" src="img/twiter.png" />
-                </a>
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-6">
-                    <h6 class="card-title text-black text-end">أ. جواد احمد</h6>
-                    <p class="card-subtitle text-black-50 fw-normal">
-                      أخصائي تغذية
-                    </p>
-                  </div>
-                  <div class="col-6">
-                    <div class="text-start">
-                      <button
-                        class="btn border-0 text-white shadow fw-bold px-3 py-1"
-                        type="submit"
-                        style="background-color: #b9aff5"
-                      >
-                        احجز موعد
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
     </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!--card3-->
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 pb-2">
+        <div class="card shadow-sm">
+          <div class="row no-gutters">
+            <div class="col-sm-4">
+              <img src="img/1.jpg" class="card-img h-100 w-100" alt="..." />
+            </div>
+            <div class="col-sm-8">
+              <div class="card-body">
+                <p class="card-subtitle text-end" style="font-size: x-small; margin-right: -1rem">
+                  برنامج 8 أسابيع--30دقيقة/اليوم
+                </p>
+                <h4 class="card-title text-end w-100" style="font-size: 2vh; margin-right: -1rem">
+                  برنامج فقدان الدهون للأشخاص
+                </h4>
+
+                <div class="row">
+                  <div class="col-4">
+                    <h6 class="card-title text-danger text-end" style="margin-right: -1rem">
+                      $19.9
+                    </h6>
+                  </div>
+                  <div class="col-8">
+                    <button class="btn border-0 text-end px-2 py-1" style="background-color: #b9aff5">
+                      <h6 class="text-white float-end" style="font-size: small">
+                        ابدأ الآن
+                        <span><i class="bx bx-shopping-bag fw-ligh" style="color: #ffffff"></i></span>
+                      </h6>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pb-2">
+        <div class="card shadow-sm">
+          <div class="row no-gutters">
+            <div class="col-sm-4">
+              <img src="img/1.jpg" class="card-img h-100 w-100" alt="..." />
+            </div>
+            <div class="col-sm-8">
+              <div class="card-body">
+                <p class="card-subtitle text-end" style="font-size: x-small; margin-right: -1rem">
+                  برنامج 8 أسابيع--30دقيقة/اليوم
+                </p>
+                <h4 class="card-title text-end w-100" style="font-size: 2vh; margin-right: -1rem">
+                  برنامج فقدان الدهون للأشخاص
+                </h4>
+
+                <div class="row">
+                  <div class="col-4">
+                    <h6 class="card-title text-danger text-end" style="margin-right: -1rem">
+                      $19.9
+                    </h6>
+                  </div>
+                  <div class="col-8">
+                    <button class="btn border-0 text-end px-2 py-1" style="background-color: #b9aff5">
+                      <h6 class="text-white float-end" style="font-size: small">
+                        ابدأ الآن
+                        <span><i class="bx bx-shopping-bag fw-ligh" style="color: #ffffff"></i></span>
+                      </h6>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pb-2">
+        <div class="card shadow-sm">
+          <div class="row no-gutters">
+            <div class="col-sm-4">
+              <img src="img/1.jpg" class="card-img h-100 w-100" alt="..." />
+            </div>
+            <div class="col-sm-8">
+              <div class="card-body">
+                <p class="card-subtitle text-end" style="font-size: x-small; margin-right: -1rem">
+                  برنامج 8 أسابيع--30دقيقة/اليوم
+                </p>
+                <h4 class="card-title text-end w-100" style="font-size: 2vh; margin-right: -1rem">
+                  برنامج فقدان الدهون للأشخاص
+                </h4>
+
+                <div class="row">
+                  <div class="col-4">
+                    <h6 class="card-title text-danger text-end" style="margin-right: -1rem">
+                      $19.9
+                    </h6>
+                  </div>
+                  <div class="col-8">
+                    <button class="btn border-0 text-end px-2 py-1" style="background-color: #b9aff5">
+                      <h6 class="text-white float-end" style="font-size: small">
+                        ابدأ الآن
+                        <span><i class="bx bx-shopping-bag fw-ligh" style="color: #ffffff"></i></span>
+                      </h6>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--card4-->
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 pb-3">
+        <div class="card">
+          <div class="position-relative">
+            <img src="img/12.png" class="card-img-top" alt="..." />
+          </div>
+          <div class="text-black-50 position-absolute top-0 start-0 p-3">
+            <a class="btn border-0 bg-transparent" href="#"><i class="bx bx-share-alt fs-4 text-black-50"></i></a>
+            <a class="btn border-0 bg-transparent" href="#"><i class="bx bx-heart fs-4 text-black-50"></i></a>
+          </div>
+          <div class="card-body">
+            <p class="card-title text-black-50" style="margin-top: -1rem">
+              رشاقة وتغذية
+            </p>
+            <p class="card-text fw-bold">
+              المعدل الطبيعي لخسارة الوزن في شهر
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pb-3">
+        <div class="card">
+          <div class="position-relative">
+            <img src="img/12.png" class="card-img-top" alt="..." />
+          </div>
+          <div class="text-black-50 position-absolute top-0 start-0 p-3">
+            <a class="btn border-0 bg-transparent" href="#"><i class="bx bx-share-alt fs-4 text-black-50"></i></a>
+            <a class="btn border-0 bg-transparent" href="#"><i class="bx bx-heart fs-4 text-black-50"></i></a>
+          </div>
+          <div class="card-body">
+            <p class="card-title text-black-50" style="margin-top: -1rem">
+              رشاقة وتغذية
+            </p>
+            <p class="card-text fw-bold">
+              المعدل الطبيعي لخسارة الوزن في شهر
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pb-3">
+        <div class="card">
+          <div class="position-relative">
+            <img src="img/12.png" class="card-img-top" alt="..." />
+          </div>
+          <div class="text-black-50 position-absolute top-0 start-0 p-3">
+            <a class="btn border-0 bg-transparent" href="#"><i class="bx bx-share-alt fs-4 text-black-50"></i></a>
+            <a class="btn border-0 bg-transparent" href="#"><i class="bx bx-heart fs-4 text-black-50"></i></a>
+          </div>
+          <div class="card-body">
+            <p class="card-title text-black-50" style="margin-top: -1rem">
+              رشاقة وتغذية
+            </p>
+            <p class="card-text fw-bold">
+              المعدل الطبيعي لخسارة الوزن في شهر
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--card5-->
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card shadow-sm h-75">
+          <div class="row no-gutters">
+            <div class="col-sm-5">
+              <img src="img/12.png" class="card-img h-75" alt="..." />
+            </div>
+            <div class="col-sm-7">
+              <div class="card-body">
+                <h6 class="card-title text-center">شيش طاووق مشوي</h6>
+                <div class="text-start">
+                  <a class="btn border-0 bg-transparent" href="#">
+                    <i class="bx bx-heart fs-3 ms-2 text-start" style="margin-bottom: -3rem !important"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card shadow-sm h-75">
+          <div class="row no-gutters">
+            <div class="col-sm-5">
+              <img src="img/12.png" class="card-img h-75" alt="..." />
+            </div>
+            <div class="col-sm-7">
+              <div class="card-body">
+                <h6 class="card-title text-center">شيش طاووق مشوي</h6>
+                <div class="text-start">
+                  <a class="btn border-0 bg-transparent" href="#">
+                    <i class="bx bx-heart fs-3 ms-2 text-start" style="margin-bottom: -3rem !important"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card shadow-sm h-75">
+          <div class="row no-gutters">
+            <div class="col-sm-5">
+              <img src="img/12.png" class="card-img h-75" alt="..." />
+            </div>
+            <div class="col-sm-7">
+              <div class="card-body">
+                <h6 class="card-title text-center">شيش طاووق مشوي</h6>
+                <div class="text-start">
+                  <a class="btn border-0 bg-transparent" href="#">
+                    <i class="bx bx-heart fs-3 ms-2 text-start" style="margin-bottom: -3rem !important"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--card6-->
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 pb-3">
+        <div class="card">
+          <div class="position-relative">
+            <img src="img/12.png" class="card-img-top" alt="..." />
+          </div>
+
+          <div class="card-body">
+            <div class="row" style="border-bottom: 1px solid #cfcfcf">
+              <div class="col-6">
+                <h6 class="card-title text-black text-end">
+                  شيش طاووق مشوي
+                </h6>
+              </div>
+              <div class="col-6">
+                <div class="text-start">
+                  <i class="bx bx-share-alt fs-4"></i>
+                  <i class="bx bx-heart fs-4"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-4 d-flex mt-2">
+                <i class="bx bxs-star text-warning"></i>
+                <i class="bx bxs-star text-warning"></i>
+                <i class="bx bxs-star text-warning"></i>
+                <i class="bx bxs-star text-warning"></i>
+              </div>
+              <div class="col-4 d-flex">
+                <i class="bi bi-alarm"></i>
+                <p>30دقيقة</p>
+              </div>
+              <div class="col-4 d-flex">
+                <i class="bx bx-bowl-hot fs-5"></i>
+                <p>متوسط</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 pb-3">
+        <div class="card">
+          <div class="position-relative">
+            <img src="img/12.png" class="card-img-top" alt="..." />
+          </div>
+
+          <div class="card-body">
+            <div class="row" style="border-bottom: 1px solid #cfcfcf">
+              <div class="col-6">
+                <h6 class="card-title text-black text-end">
+                  شيش طاووق مشوي
+                </h6>
+              </div>
+              <div class="col-6">
+                <div class="text-start">
+                  <i class="bx bx-share-alt fs-4"></i>
+                  <i class="bx bx-heart fs-4"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-4 d-flex mt-2">
+                <i class="bx bxs-star text-warning"></i>
+                <i class="bx bxs-star text-warning"></i>
+                <i class="bx bxs-star text-warning"></i>
+                <i class="bx bxs-star text-warning"></i>
+              </div>
+              <div class="col-4 d-flex">
+                <i class="bi bi-alarm"></i>
+                <p>30دقيقة</p>
+              </div>
+              <div class="col-4 d-flex">
+                <i class="bx bx-bowl-hot fs-5"></i>
+                <p>متوسط</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 pb-3">
+        <div class="card">
+          <div class="position-relative">
+            <img src="img/12.png" class="card-img-top" alt="..." />
+          </div>
+
+          <div class="card-body">
+            <div class="row" style="border-bottom: 1px solid #cfcfcf">
+              <div class="col-6">
+                <h6 class="card-title text-black text-end">
+                  شيش طاووق مشوي
+                </h6>
+              </div>
+              <div class="col-6">
+                <div class="text-start">
+                  <i class="bx bx-share-alt fs-4"></i>
+                  <i class="bx bx-heart fs-4"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-4 d-flex mt-2">
+                <i class="bx bxs-star text-warning"></i>
+                <i class="bx bxs-star text-warning"></i>
+                <i class="bx bxs-star text-warning"></i>
+                <i class="bx bxs-star text-warning"></i>
+              </div>
+              <div class="col-4 d-flex">
+                <i class="bi bi-alarm"></i>
+                <p>30دقيقة</p>
+              </div>
+              <div class="col-4 d-flex">
+                <i class="bx bx-bowl-hot fs-5"></i>
+                <p>متوسط</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--card7-->
+    <div class="row">
+
+      <div class="col-12 col-md-6 col-lg-4 pb-3">
+        <div class="card">
+          <div class="position-relative">
+            <img src="img/ahmad.png" class="card-img-top" alt="..." />
+          </div>
+          <div class="position-absolute top-0 start-0 p-3">
+            <a class="btn border-0 bg-transparent p-0 m-0" href="#">
+              <img height="25" src="img/whatts.png" />
+            </a>
+
+            <a class="btn border-0 bg-transparentp-0 m-0" href="#">
+              <img height="25" src="img/insta.png" />
+            </a>
+            <a class="btn border-0 bg-transparent p-0 m-0" href="#">
+              <img height="25" src="img/twiter.png" />
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                <h6 class="card-title text-black text-end">أ. جواد احمد</h6>
+                <p class="card-subtitle text-black-50 fw-normal">
+                  أخصائي تغذية
+                </p>
+              </div>
+              <div class="col-6">
+                <div class="text-start">
+                  <button class="btn border-0 text-white fw-bold px-3 py-1" type="submit"
+                    style="background-color: #b9aff5">
+                    احجز موعد
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 pb-3">
+        <div class="card">
+          <div class="position-relative">
+            <img src="img/ahmad.png" class="card-img-top" alt="..." />
+          </div>
+          <div class="position-absolute top-0 start-0 p-3">
+            <a class="btn border-0 bg-transparent p-0 m-0" href="#">
+              <img height="25" src="img/whatts.png" alt="" />
+            </a>
+
+            <a class="btn border-0 bg-transparentp-0 m-0" href="#">
+              <img height="25" src="img/insta.png" />
+            </a>
+            <a class="btn border-0 bg-transparent p-0 m-0" href="#">
+              <img height="25" src="img/twiter.png" />
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                <h6 class="card-title text-black text-end">أ. جواد احمد</h6>
+                <p class="card-subtitle text-black-50 fw-normal">
+                  أخصائي تغذية
+                </p>
+              </div>
+              <div class="col-6">
+                <div class="text-start">
+                  <button class="btn border-0 text-white shadow fw-bold px-3 py-1" type="submit"
+                    style="background-color: #b9aff5">
+                    احجز موعد
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
