@@ -1,24 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css" />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
-    />
-    <title>Document</title>
-    <style>
-      .loading-wrapper {
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <title>Document</title>
+        <style>
+      .loading-wrapper1,.loading-wrapper2 {
         background-image: url("landing\ page\ –\ 25.png");
-        background-size: contain;
+        background-size: cover !important;
+        transition:1s;
+        background-repeat: no-repeat;
       }
-    </style>
-  </head>
-  <body>
-    <div class="loading-wrapper min-vh-100 w-100 position-fixed"></div>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+     
+       .loading-wrapper1 {
+        clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+
+      }
+      .loading-wrapper2 {
+        clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+
+      } 
+      .imag{
+        filter: drop-shadow(10px 10px 3px #BE8ADC40);
+      }
+      .spinner-grow{
+        color: #BE8ADC;
+      }
+
+    
+     
+  
+      .spinner-loader{
+        width: 30px;
+        height: 30px;
+        background: #80808030;;
+        border-radius: 50%;
+      }
+      .spinner-inner{
+        animation: hide 2.5s ease-in-out infinite;  animation-delay: calc(-.5s * var(--i));
+
+      }
+
+      @keyframes hide {
+        0%{opacity: 1;}50%{opacity: 0;}100%{opacity: 1;}
+      
+      }
+      .loading-wrapper,.loading-wrapper3{
+        transition:1s
+      }
+      /* .loading-wrapper.hide{
+        transform:translateY(-120%);
+      } */
+      .loading-wrapper.hide .loading-wrapper1{
+        transform:translateX(100%);
+      }
+      .loading-wrapper.hide  .loading-wrapper2,
+      .loading-wrapper.hide  .loading-wrapper3{
+        transform:translateX(-100%);
+      }
+        </style>
+    </head>
+    <body>
+        <div class="loading-wrapper min-vh-100 w-100 position-fixed">
+            <div class=" min-vh-100 w-100 position-relative">
+                <div class="w-100 h-100 position-absolute top-0 start-0 loading-wrapper1"></div>
+                <div class="w-100  h-100 position-absolute top-0 start-0 loading-wrapper2"></div>
+            </div>
+            <div class="d-flex loading-wrapper3 position-absolute top-0 left-0 flex-column   justify-content-center align-items-center min-vh-100 w-100">
+                <img
+                    src="./assets/images/Mask Group 41.png"
+                    alt=""
+                    sizes=""
+                    srcset=""
+                    class="img-fluid mb-5 imag"
+                >
+                <div class="d-flex gap-3">
+                    <div class="spinner-loader rounded-circle ">
+                        <div class="spinner-inner w-100 h-100 bg-white shadow rounded-circle" style="--i:0"></div>
+                    </div>
+                    <div class="spinner-loader rounded-circle ">
+                        <div class="spinner-inner w-100 h-100 bg-white shadow rounded-circle" style="--i:1"></div>
+                    </div>
+                    <div class="spinner-loader rounded-circle ">
+                        <div class="spinner-inner w-100 h-100 bg-white shadow rounded-circle" style="--i:2"></div>
+                    </div>
+                    <div class="spinner-loader rounded-circle ">
+                        <div class="spinner-inner w-100 h-100 bg-white shadow rounded-circle" style="--i:3"></div>
+                    </div>
+                    <div class="spinner-loader rounded-circle ">
+                        <div class="spinner-inner w-100 h-100 bg-white shadow rounded-circle" style="--i:4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script>//window.onload=() =>document.querySelector('.loading-wrapper').classList.add('hide')
+        setTimeout(() =>document.querySelector('.loading-wrapper').classList.add('hide'),5000)
+        </script>
+    </body>
 </html>
